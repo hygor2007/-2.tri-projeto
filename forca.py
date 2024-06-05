@@ -1,39 +1,70 @@
-def forca(tentativa):
-    f1 ="+--------+"
-    f2 ="|        |"
-    f3 ="|        o"
-    f4 ="|       /|\"
-    f5 ="|        |"
-    f6 ="|       / \"
-    f7 ="____________"
+def Forca(tentativa):
+    f1 = " +-------+   "
+    f2 = " |           "
+    f3 = " |           "
+    f4 = " |           "
+    f5 = " |           "
+    f6 = " |           "
+    f7 = "_|_          "
 
-    if tentativa>=1:
-        f2 = "     |    |"
+    if tentativa >= 1:
+        f2 = " |       | "
 
-    if tentativa>=2:
-        f3="   |    o"
-    if tentativa>=3:  
+    if tentativa >= 2:
+        f3 = " |       O "
+    if tentativa >= 3:
+        f4 = " |      /|\ "
+    if tentativa >= 4:
+        f5 = " |       | "
+    if tentativa >= 5:
+        f6 = " |      / \ "
 
 
 
+    print(f1)
+    print(f2)
+    print(f3)
+    print(f4)
+    print(f5)
+    print(f6)
+    print(f7)
 
-
-
-def continua():
+def Continue():
     while True:
-        print("-" * 20)
-        novamente = input("Quer jogar de novo S/N? ").upper()
-        if novamente == "S":
-            acabou = True
+        print("" * 20)
+        novamete = input("Quer jogar de novo S/N: ").upper()
+        if novamete == "S":
+            Acabou = True
             break
-        elif novamente == "N":
-            acabou = False
+        elif novamete == "N":
+            Acabou = False
             break
         else:
             print("Digite S ou N")
-    return acabou
+    return Acabou
 
-jogar = True
-while jogar :
-    jogar = continua()
+#Jogar = True
+#x=0
+#while Jogar :
+ #   Forca(x)
+  #  Jogar = Continue()
+   # x = x + 1
+Forca(10)
 
+def sorteiapalavra():
+    lista = ["amor", "grama", "mato", "casa", "carro", "bola", "lapis", "caneta", "discoteca", "quadro"]
+    return random.choice(lista)
+import random
+print(sorteiapalavra())
+
+def apresentapalavra(letra,palavra):
+    len("amor")
+    npalavra="_"* len()
+    return npalavra
+print(apresentapalavra("ab","amor"))
+
+
+
+
+
+apresentapalavra("abcdefghijklmnopqrstuvwxyz", "amor")
